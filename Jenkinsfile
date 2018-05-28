@@ -29,7 +29,7 @@ pipeline {
             steps{
                 kubernetesDeploy(
                     kubeconfigId: 'kubeconfig-production',
-                    configs: 'replicationcontroller.yaml',
+                    configs: 'deployment.yaml',
                     enableConfigSubstitution: true,
                 )
             }
